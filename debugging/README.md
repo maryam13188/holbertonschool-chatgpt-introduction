@@ -16,22 +16,20 @@ This project demonstrates the integration of Artificial Intelligence (ChatGPT) i
 - Implement AI-driven solutions for software development challenges
 
 ## 📁 Project Structure
-holbertonschool-chatgpt-introduction/
-│
-├── debugging/ # Debugging tasks directory
-│ ├── factorial.py # Fixed infinite loop in factorial calculation
-│ ├── print_arguments.py # Print command line arguments (fixed)
-│ ├── change_background.html # HTML/JS background color changer (fixed)
-│ ├── mines.py # Minesweeper with win detection (fixed)
-│ ├── factorial_recursive.py # Recursive factorial with documentation
-│ ├── checkbook.py # Checkbook with error handling (fixed)
-│ └── tic.py # Tic Tac Toe with multiple bug fixes
-│
-├── automation/ # Automation tasks (future)
-│
-└── best_practices/ # Best practices documentation (future)
 
-text
+| Path | File Name | Description | Status |
+|------|-----------|-------------|--------|
+| `debugging/` | `factorial.py` | Fixed infinite loop in factorial calculation | ✅ Completed |
+| `debugging/` | `print_arguments.py` | Print command line arguments (fixed) | ✅ Completed |
+| `debugging/` | `change_background.html` | HTML/JS background color changer (fixed) | ✅ Completed |
+| `debugging/` | `mines.py` | Minesweeper with win detection (fixed) | ✅ Completed |
+| `debugging/` | `factorial_recursive.py` | Recursive factorial with documentation | ✅ Completed |
+| `debugging/` | `checkbook.py` | Checkbook with error handling (fixed) | ✅ Completed |
+| `debugging/` | `tic.py` | Tic Tac Toe with multiple bug fixes | ✅ Completed |
+| `automation/` | | Automation tasks | ⏳ Future |
+| `best_practices/` | | Best practices documentation | ⏳ Future |
+
+
 
 ## 🛠️ Tasks Completed
 
@@ -98,21 +96,27 @@ text
 
 # Test minesweeper
 ./debugging/mines.py            # Try to win the game
-🤖 ChatGPT Prompts Used
-For Debugging:
-text
+```
+----
+## 🤖 ChatGPT Prompts Used
+## For Debugging:
+
+```
 "I have this code with a bug: [paste code]
 The problem is: [describe issue]
 Can you help identify and fix the bug?"
-For Documentation:
-text
+```
+## For Documentation:
+```
 "Please add comprehensive documentation to this Python function:
 Include function description, parameters, returns, and examples."
-For Error Handling:
-text
+``` 
+## For Error Handling:
+```
 "Add error handling to prevent crashes from invalid user input.
 Include try-except blocks and validation for edge cases."
-💡 Key Learnings
+```
+## 💡 Key Learnings
 AI as Debugging Assistant: ChatGPT excels at identifying common programming errors
 
 Clear Problem Description: The quality of AI help depends on how clearly you describe the problem
@@ -123,7 +127,7 @@ Documentation Matters: AI can generate excellent documentation from well-structu
 
 Error Prevention: Proactive error handling improves software robustness
 
-🚀 Skills Developed
+## 🚀 Skills Developed
 Debugging: Identifying and fixing bugs with AI assistance
 
 Documentation: Creating professional code documentation
@@ -134,7 +138,7 @@ AI Integration: Leveraging ChatGPT for coding tasks
 
 Problem Solving: Breaking down complex problems into manageable tasks
 
-📚 Best Practices Demonstrated
+## 📚 Best Practices Demonstrated
 Code Testing: Always test after implementing AI suggestions
 
 Version Control: Use Git to track changes and revert if needed
@@ -144,5 +148,11 @@ Code Review: Critical evaluation of AI-generated code
 Modular Design: Keeping code organized and maintainable
 
 User Experience: Creating friendly error messages and interfaces
+
+ ## Contributor
+ Maryam Alessa
+
+
+
 
 

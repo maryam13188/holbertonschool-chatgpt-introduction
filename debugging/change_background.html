@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            transition: background-color 0.5s ease;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Click the button to change the background color</h1>
+        <button id="colorButton">Change Color</button>
+    </div>
+
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the button element
+            var colorButton = document.getElementById("colorButton");
+            
+            // Add click event listener
+            colorButton.addEventListener("click", function() {
+                changeBackgroundColor();
+            });
+        });
+
+        function changeBackgroundColor() {
+            // Generate a random color
+            var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+            
+            // Change the background color of the body
+            document.body.style.backgroundColor = randomColor;
+            
+            // Optional: Update text color for better contrast
+            var brightness = (parseInt(randomColor.substring(1), 16) >> 16 & 0xFF) * 0.299 +
+                            (parseInt(randomColor.substring(1), 16) >> 8 & 0xFF) * 0.587 +
+                            (parseInt(randomColor.substring(1), 16) & 0xFF) * 0.114;
+            document.body.style.color = brightness > 186 ? "#000000" : "#FFFFFF";
+        }
+    </script>
+</body>
+</html>
